@@ -26,3 +26,5 @@ Testing set: size -- 4000
         accuracy                           1.00      4000
        macro avg       0.76      1.00      0.84      4000
     weighted avg       1.00      1.00      1.00      4000
+
+obsoleted because there were some mistakes in the program
