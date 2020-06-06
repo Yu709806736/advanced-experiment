@@ -49,7 +49,7 @@ y = df['Class'].values.tolist()
 # print(count)
 
 dt = DecisionTreeClassifier()
-sm = SMOTE(sampling_strategy=0.25, random_state=42, k_neighbors=10)
+# sm = SMOTE(sampling_strategy=0.25, random_state=42, k_neighbors=10)
 # x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 train_size: int = int(0.8 * len(x))
 test_size: int = len(x) - train_size
@@ -57,8 +57,8 @@ x_train = x[:train_size]
 x_test = x[train_size:]
 y_train = y[:train_size]
 y_test = y[train_size:]
-x_train, y_train = sm.fit_resample(x_train, y_train)
-train_size = len(x_train)
+# x_train, y_train = sm.fit_resample(x_train, y_train)
+# train_size = len(x_train)
 
 window_size = DEFAULT_INIT_WINDOW_SIZE  # initialize the window size
 ADES = ADes()
