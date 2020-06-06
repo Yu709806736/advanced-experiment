@@ -35,7 +35,7 @@ df = pd.read_csv("D:\\SUSTech\\2019 fall\\innovation1\\credit-card-fraud-detecti
 
 lc: float = 0  # lower threshold of N/S
 hc: float = 0.17 / 99.83 * 3  # higher threshold of N/S
-pacc: float = 0.985  # threshold of predict accuracy
+pacc: float = 0.99  # threshold of predict accuracy
 prec: float
 # print(lc, hc)
 
@@ -182,7 +182,7 @@ def adjust_window():
     metric: int = 0
     if prec != -1:
         if recall > prec:
-            if accuracy > pacc:
+            if accuracy < pacc:
                 metric = 2
             else:
                 metric = 1
