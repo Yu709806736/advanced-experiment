@@ -9,6 +9,8 @@ hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S
 pacc: float = 0.985  # threshold of predict accuracy
 prec: float = 0.83  # threshold of predict recall
 
+# not finished
+
 Training set: size -- 227844
   window size = 1999
   accuracy = 0.9844729376058413
