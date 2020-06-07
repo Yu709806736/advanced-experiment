@@ -12,19 +12,23 @@ prec: float = 0.83  # threshold of predict recall
 # not finished
 
 Training set: size -- 227844
-  window size = 4999
-  accuracy = 0.9928434757747037
-  recall = 0.8177458033573142
+  window size = 1999
+  accuracy = 0.985304273241109
+  recall = 0.8273381294964028
   
 Testing set: size -- 56962
   Confusion matrix:
-    [[55505  1382]
-     [   14    61]]
+    [[55641  1246]
+     [   16    59]]
    
   Report:
                   precision    recall  f1-score   support
                0       1.00      0.98      0.99     56887
-               1       0.04      0.81      0.08        75
-        accuracy                           0.99     56962
+               1       0.05      0.79      0.09        75
+        accuracy                           0.98     56962
        macro avg       0.52      0.88      0.54     56962
-    weighted avg       1.00      0.99      0.99     56962
+    weighted avg       1.00      0.98      0.99     56962
+    
+  AUC score of ROC curve: 0.8823817978331311
+  
+  
