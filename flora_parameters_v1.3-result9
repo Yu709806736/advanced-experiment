@@ -18,13 +18,13 @@ Training set: size -- 227844
   
 Testing set: size -- 56962
   Confusion matrix:
-    [[56131   756]
-     [   17    58]]
+    [[55505  1382]
+     [   14    61]]
    
   Report:
                   precision    recall  f1-score   support
-               0       1.00      0.99      0.99     56887
-               1       0.07      0.77      0.13        75
+               0       1.00      0.98      0.99     56887
+               1       0.04      0.81      0.08        75
         accuracy                           0.99     56962
-       macro avg       0.54      0.88      0.56     56962
+       macro avg       0.52      0.88      0.54     56962
     weighted avg       1.00      0.99      0.99     56962
