@@ -6,8 +6,8 @@ DEFAULT_INIT_WINDOW_SIZE: int = 500
 
 lc: float = 0  # lower coverage threshold of N/S
 hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S
-pacc: float = 0.98  # threshold of predict accuracy
-prec: float = 0.8  # threshold of predict recall
+pacc: float = 0.99  # threshold of predict accuracy
+prec: float = 0.85  # threshold of predict recall
 
 Training set: size -- 227844
   window size = 1999
