@@ -3,7 +3,7 @@ DEFAULT_MIN_WINDOW_SIZE: int = 2000
 DEFAULT_INIT_WINDOW_SIZE: int = 500
 
 SMOTE --> 0.1
-min_pos_por: 0.1
+min_pos_por: 0.2
 min_neg_por: 0.5
 
 # Whole data set
@@ -32,3 +32,5 @@ Testing set: size -- 56962
     weighted avg       1.00      1.00      1.00     56962
     
   AUC score of ROC curve: 0.884741798067514
+  
+  ROC curve stored in test3.jpg
