@@ -1,0 +1,34 @@
+DEFAULT_MIN_WINDOW_SIZE: int = 5000
+DEFAULT_MIN_WINDOW_SIZE: int = 2000
+DEFAULT_INIT_WINDOW_SIZE: int = 500
+
+SMOTE --> 0.05
+min_pos_por: 0.2
+min_neg_por: 0.5
+
+# Whole data set
+
+lc: float = 0  # lower coverage threshold of N/S
+hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S
+pacc: float = 0.99  # threshold of predict accuracy
+prec: float = 0.83  # threshold of predict recall
+
+Training set: size -- 238798
+  window size = 1999
+  accuracy = 0.992152715705899
+  recall = 0.9576114677688857
+  
+Testing set: size -- 56962
+  Confusion matrix:
+    [[56346   541]
+     [   20    55]]
+     
+  Report:
+                  precision    recall  f1-score   support
+               0       1.00      0.99      1.00     56887
+               1       0.09      0.73      0.16        75
+        accuracy                           0.99     56962
+       macro avg       0.55      0.86      0.58     56962
+    weighted avg       1.00      0.99      0.99     56962
+    
+  AUC score of ROC curve: 0.8619116259719561
