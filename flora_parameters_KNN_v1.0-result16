@@ -1,0 +1,29 @@
+DEFAULT_MAX_WINDOW_SIZE: int = 5000
+DEFAULT_MIN_WINDOW_SIZE: int = 2000
+DEFAULT_INIT_WINDOW_SIZE: int = 500
+
+# Whole data set
+
+lc: float = 0  # lower coverage threshold of N/S
+hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S
+pacc: float = 0.99  # threshold of predict accuracy
+prec: float = 0.83  # threshold of predict recall
+
+Training set: size -- 227844
+  window size = 4999
+  accuracy = 0.9986892168290483
+  recall = 0.6330935251798561
+  
+Testing set: size -- 56962
+  Confusion matrix:
+    [[56831    56]
+     [   27    48]]
+     
+  Report:
+                  precision    recall  f1-score   support
+               0       1.00      1.00      1.00     56887
+               1       0.46      0.64      0.54        75
+
+        accuracy                           1.00     56962
+       macro avg       0.73      0.82      0.77     56962
+    weighted avg       1.00      1.00      1.00     56962
