@@ -30,4 +30,4 @@ Testing set: size -- 56962
     weighted avg       1.00      0.97      0.98     56962
     
   AUC score of ROC curve: 0.8997977276589262
-  ROC curve stored in: dt_roc.jpg
+  ROC curve stored in: ![dt_roc.jpg](./images/dt_roc.jpg)
