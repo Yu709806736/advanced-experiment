@@ -2,6 +2,8 @@ DEFAULT_MAX_WINDOW_SIZE: int = 5000
 DEFAULT_MIN_WINDOW_SIZE: int = 2000  
 DEFAULT_INIT_WINDOW_SIZE: int = 1000  
 
+Random Forest Classifier
+
 # Whole data set  
 
 lc: float = 0  # lower coverage threshold of N/S  
@@ -30,3 +32,4 @@ Testing set: size -- 56962
     weighted avg       1.00      1.00      1.00     56962
     
   AUC score of ROC curve: 0.8990683284405927
+  ROC curve stored in: ./images/random_forest_roc_result23.jpg
