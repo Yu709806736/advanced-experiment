@@ -1,0 +1,36 @@
+DEFAULT_MAX_WINDOW_SIZE: int = 5000  
+DEFAULT_MIN_WINDOW_SIZE: int = 2000  
+DEFAULT_INIT_WINDOW_SIZE: int = 1000  
+
+DT classifier
+
+# Whole data set  
+
+lc: float = 0  # lower coverage threshold of N/S  
+hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S  
+pacc: float = 0.99  # threshold of predict accuracy  
+prec: float = 0.83  # threshold of predict recall  
+
+Training set: size -- 227844  
+  window size = 2079  
+  accuracy = 0.983742202825718
+  recall = 0.8216867469879519 
+  
+TP = 341, FN = 74, TN = 222861, FP = 3614
+
+Testing set: size -- 56962  
+  Confusion matrix:
+    [[55485  1402]
+     [   11    64]]
+     
+  Report:
+                  precision    recall  f1-score   support
+               0       1.00      0.98      0.99     56887
+               1       0.04      0.85      0.08        75
+        accuracy                           0.98     56962
+       macro avg       0.52      0.91      0.54     56962
+    weighted avg       1.00      0.98      0.99     56962
+    
+  AUC score of ROC curve: 0.9143439918903558
+  
+  ROC curve stored in: ./images/dt_roc_result26.jpg
