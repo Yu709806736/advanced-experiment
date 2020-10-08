@@ -33,4 +33,4 @@ Testing set: size -- 56962
     
   AUC score of ROC curve: 0.9143439918903558
   
-  ROC curve stored in: ./images/dt_roc_result26.jpg
+  ROC curve stored in: ./images/result26/dt_roc_result26.jpg
