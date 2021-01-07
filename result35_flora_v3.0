@@ -16,20 +16,21 @@ Training set: size -- 227844
   accuracy average = 0.987441567358422, variance = 0.00017208102916332394
   recall average = 0.0835451596436157, variance = 0.051691143510745
   
-result at the end of training: TP = 202, FN = 213, TN = 225567, FP = 908
+result at the end of training: TP = 161, FN = 254, TN = 226316, FP = 159
 
+Test result:
   Confusion matrix:
-    [[56275   612]
-     [   37    38]]
+    [[56887     0]
+     [   57    18]]
      
   Report:
                   precision    recall  f1-score   support
-               0       1.00      0.99      0.99     56887
-               1       0.06      0.51      0.10        75
-        accuracy                           0.99     56962
-       macro avg       0.53      0.75      0.55     56962
-    weighted avg       1.00      0.99      0.99     56962
+               0       1.00      1.00      1.00     56887
+               1       1.00      0.24      0.39        75
+        accuracy                           1.00     56962
+       macro avg       1.00      0.62      0.69     56962
+    weighted avg       1.00      1.00      1.00     56962
 
-  AUC score of ROC curve: 0.7479542484809066
+  AUC score of ROC curve: 0.62
   
-  other figures stored in: ./images/result32/
+  other figures stored in: ./images/result35/
