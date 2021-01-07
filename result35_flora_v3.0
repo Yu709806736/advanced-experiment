@@ -1,0 +1,35 @@
+DEFAULT_MAX_WINDOW_SIZE: int = 5000  
+DEFAULT_MIN_WINDOW_SIZE: int = 2000  
+DEFAULT_INIT_WINDOW_SIZE: int = 1000  
+
+SVM classifier
+
+# Whole data set  
+
+lc: float = 0  # lower coverage threshold of N/S  
+hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S  
+pacc: float = 0.99  # threshold of predict accuracy  
+prec: float = 0.83  # threshold of predict recall  
+
+Training set: size -- 227844  
+  window size = 1891  
+  accuracy average = 0.987441567358422, variance = 0.00017208102916332394
+  recall average = 0.0835451596436157, variance = 0.051691143510745
+  
+result at the end of training: TP = 202, FN = 213, TN = 225567, FP = 908
+
+  Confusion matrix:
+    [[56275   612]
+     [   37    38]]
+     
+  Report:
+                  precision    recall  f1-score   support
+               0       1.00      0.99      0.99     56887
+               1       0.06      0.51      0.10        75
+        accuracy                           0.99     56962
+       macro avg       0.53      0.75      0.55     56962
+    weighted avg       1.00      0.99      0.99     56962
+
+  AUC score of ROC curve: 0.7479542484809066
+  
+  other figures stored in: ./images/result32/
