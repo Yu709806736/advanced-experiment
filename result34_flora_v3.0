@@ -13,8 +13,8 @@ prec: float = 0.83  # threshold of predict recall
 
 Training set: size -- 227844  
   window size = 1891  
-  accuracy average = 0.9913600219108475, variance = 1.7111429306699615e-05
-  recall average = 0.09626947035167342, variance = 0.0661651696506543
+  accuracy average = 0.997738518428601, variance = 1.3122296780128207e-06
+  recall average = 0.625641944510861, variance = 0.010194114980419557
   
 result at the end of training: TP = 272, FN = 143, TN = 225631, FP = 844
 
