@@ -1,0 +1,36 @@
+DEFAULT_MAX_WINDOW_SIZE: int = 5000  
+DEFAULT_MIN_WINDOW_SIZE: int = 2000  
+DEFAULT_INIT_WINDOW_SIZE: int = 1000  
+
+KNN classifier
+
+# Whole data set  
+
+lc: float = 0  # lower coverage threshold of N/S  
+hc: float = 0.17 / 99.83 * 3  # higher coverage threshold of N/S  
+pacc: float = 0.99  # threshold of predict accuracy  
+prec: float = 0.83  # threshold of predict recall  
+
+Training set: size -- 227844  
+  window size = 1891  
+  accuracy average = 0.9913600219108475, variance = 1.7111429306699615e-05
+  recall average = 0.09626947035167342, variance = 0.0661651696506543
+  
+result at the end of training: TP = 272, FN = 143, TN = 225631, FP = 844
+
+Testing set: size -- 56962  
+  Confusion matrix:
+    [[56456   431]
+     [   24    51]]
+     
+  Report:
+                  precision    recall  f1-score   support
+               0       1.00      0.99      1.00     56887
+               1       0.11      0.68      0.18        75
+        accuracy                           0.99     56962
+       macro avg       0.55      0.84      0.59     56962
+    weighted avg       1.00      0.99      0.99     56962
+    
+  AUC score of ROC curve: 0.8362117882820329
+  
+  other figures stored in: ./images/result34/
