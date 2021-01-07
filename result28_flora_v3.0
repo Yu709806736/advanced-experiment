@@ -15,6 +15,8 @@ Training set: size -- 227844
   window size = 1998  
   accuracy = 0.9974211465978973
   recall = 0.8361445783132531
+  accuracy average = 0.9984258631147238, variance = 3.832378946841112e-07
+  recall average = 0.8249658830393026, variance = 0.016087536703670857
   
 TP = 336, FN = 79, TN = 225452, FP = 1023
 
